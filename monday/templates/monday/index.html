@@ -1,0 +1,16 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Is It Monday?</title>
+    <link href="{% static 'monday/styles.css' %}" rel="stylesheet">
+  </head>
+  <body>
+    {% if monday %}
+      <h1>YES</h1>
+    {% else %}
+      <h1>NO</h1>
+    {% endif %}
+  </body>
+</html>
